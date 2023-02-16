@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <main>
+        <form >
+            <section>
+            <h1>El club viejuner</h1>
+                <fieldset>
+                    <legend>Tú</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Escribe tu nombre" id="nombre" tabindex="1" autofocus>
+                    <br>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellido" placeholder="Escribe tus apellidos" id="apellidos" tabindex="2">
+                    <br>
+                    <label for="edad">Edad</label>
+                    <input typenumber="number" name="edad" placeholder="Escribe tu edad" id="edad" tabindex="3">
+                    <br>
+                    <br>
+                    <input type="radio" id="mujer" name="sexo" value="Mujer">
+                    <label for="mujer">Mujer</label><br>
+                    <input type="radio" id="hombre" name="sexo" value="Hombre">
+                    <label for="hombre">Hombre</label><br>
+                    <br>
+                    <input type="checkbox" id="viejuner" name="viejuner" value="Viejuner">
+                    <label for="viejuner">Me siento viejuner</label><br>
+                </fieldset>
+                <br>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Tus circunstancias</legend>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <br>
+                    <textarea name="message" placeholder="Escribe algo sobre tí:" rows="5" cols="30">Escribe algo sobre tí:
+                    </textarea>
+                </fieldset>
+            </section>
+        <input type="submit" value="Submit">
+        <input type="reset">
+        </form>
+
+        <form>
+            <section>
+            <h1>Los ladronzuelos de bicicletas</h1>
+                <label for="date" autofocus>Fecha:</label>
+                <input type="date" id="date" name="fecha">
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="hora">
+                <br>
+                <br>
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color" value="#ff0000">
+                <br>
+                <br>
+                <label for="precio">Precio (entre 0 y 5000€):</label> 0
+                <input type="range" id="precio" name="precio" min="0" max="5000">5000€
+                <br>
+                <br>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Tipo de bicicleta</legend>
+                    <label for="bicipaseo">Paseo</label>
+                    <select id="bicipaseo" name="bicipaseo">
+                        <option value="señorial">Señorial</option>
+                        <option value="anti-plebeyos">Anti-plebeyos</option>
+                        <option value="porencimadelhombro">PorEncimaDelHombro</option>
+                    </select>
+                    <label for="bicimontaña">Montaña</label>
+                    <select id="bicimontaña" name="bicimontaña">
+                        <option value="gamusinos">Gamusinos</option>
+                        <option value="hueleflorespremium">Hueleflores premium</option>
+                        <option value="fangolover">Fango lover</option>          
+                    </select>
+                    <br>
+                    <label for="bicicarreras">Carreras</label>
+                    <select id="bicicarreras" name="bicicarreras">
+                        <option value="metroymedio">Metroymedio</option>
+                        <option value="3delatarde.Fluorescenteedition">3 de la tarde. Fluorescente edition</option>
+                        <option value="grupitors">Grupitors</option>         
+                    </select>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Accesorios</legend>
+                    <select name="accesorios" id="accesorios" multiple>
+                        <option value="ruedines">Ruedines</option>
+                        <option value="pegatinas">Pegatinas</option>
+                        <option value="bombadeaire">Bomba de aire</option>
+                        <option value="timbre">Timbre</option>
+                        <option value="foco">Foco</option>
+                    </select>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Que marca era?</legend>
+                    <input list="marca">
+                    <datalist id="marca">
+                        <option value="specialized">
+                        <option value="trek">
+                        <option value="merida">
+                        <option value="scott">
+                        <option value="giant">
+                        <option value="cube">
+                        <option value="lapierre">
+                        <option value="orbea">
+                        <option value="cannondale">
+                        <option value="bmc">
+                        <option value="canyon">
+                        <option value="look">
+                        <option value="protek">
+                        <option value="megamo">
+                        <option value="pinarello">
+                        <option value="bianchi">
+                        <option value="bh">
+                        <option value="factor">
+                        <option value="ghost">
+                        <option value="cervélo">
+                        <option value="argon">
+                    </datalist>
+                </fieldset>
+            </section>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+    </main>
+</body>
+</html>
